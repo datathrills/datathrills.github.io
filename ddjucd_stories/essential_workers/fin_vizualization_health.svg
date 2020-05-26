@@ -1620,7 +1620,7 @@
 </g>
 <path display="none" d="M20,6"/>
 <g>
-	<text transform="matrix(1 0 0 1 -12.86 -203.7078)"><tspan x="0" y="0" fill="#3A3A3A" font-family="Arial Narrow" font-weight="700" font-size="22">Median incomes of some occupations in Healthcare industry compared to </tspan><tspan x="0" y="26.4" fill="#3A3A3A" font-family="'ArialNarrow-Bold'" font-size="22">incomes of all occupations in other industries</tspan></text>
+	<text transform="matrix(1 0 0 1 -12.86 -203.7078)"><tspan x="0" y="0" fill="#3A3A3A" font-family="Arial Narrow" font-weight="700" font-size="22">Median incomes of some occupations in Healthcare industry compared to </tspan><tspan x="0" y="26.4" fill="#3A3A3A" font-family="Arial Narrow" font-weight="700" font-size="22">incomes of all occupations in other industries</tspan></text>
 </g>
 <g>
 	<text transform="matrix(1 0 0 1 -12.86 -99.3745)"><tspan x="0" y="0" fill="#3A3A3A" font-family="Arial Narrow" font-size="16">Income of occupations in Healthcare is shown with</tspan><tspan x="293.9" y="0" fill="#DD4B4B" font-family="Arial Narrow" font-size="16"> </tspan><tspan x="297.6" y="0" fill="#DD4B4B" font-family="Arial Narrow" font-weight="700" font-size="16">red bars</tspan></text>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="dataTables.rowReorder.min.js"></script>
+
+        <script type="text/javascript" src="studenti_data3.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css" />
+        <link rel="stylesheet" type="text/css" href="responsive.dataTables.min.css" />
+        <link rel="stylesheet" type="text/css" href="rowReorder.dataTables.min.css" />
+
+        <style>
+            #title{
+                font-size: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 id="title">SEARCH VOTES BY MEMBERS OF PARLIAMENT</h1>
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+
+
+        <table id="table_id" class="display" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name and Surname</th>
+                    <th>Adjustments to the amounts mobilised from the Flexibility Instrument for 2019 to be used for migration, refugee inflows and security threats</th>
+                    <th>Foreign electoral interference and disinformation in national and European democratic processes</th>
+                    <th>Draft amending budget surplus from 2018</th>
+                    <th>Mobilisation of the European Globalisation Adjustment Fund</th>
+                    <th>EurOil and Serbia Cooperation Agreement</th>
+                    <th>Criminal Justice (International Co-operation) Bill</th>
+                    <th>Parole Bill</th>
+                    <th>Judicial Appointments Commission Bill</th>
+                    <th>Proposed Service by Defence Forces with United Nations in Mali</th>
+                    <th>Judicial Council Bill</th>
+                    <th>National Minimum Wage</th>
+                    <th>Deployment of Defence Forces in Albania</th>
+                    <th>Information and Tracing Bill</th>
+                    <th>Sugar Tax Bill</th>
+                    <th>Vulture Companies Regulation Appendix</th>
+                    <th>Gaming and Lotteries Bill</th>
+                    <th>Residential Tenancies Bill</th>
+                    <th>Thirty-fifth Amendment of the Constitution</th>
+                    <th>Special Regulations about Mothers and Babies</th>
+                    <th>Aircraft Noise  Bill</th>
+                    <th>Nuclear Power Strategy</th>
+                    <th>Wildlife Protection Bill</th>
+                    <th>Mandatory Beef Price Transparency Bill</th>
+                    <th>Harmful Plastics (Prohibition) Bill</th>
+                    <th>Parent's Leave and Benefit Bill</th>
+                    <th>Intoxicating Liquor Act</th>
+                    <th>Recognition of Decisions on Supervision Measures on Facebook</th>
+                    <th>Blasphemy Bill</th>
+                    <th>Firearms and Offensive Weapons Act</th>
+                    <th>National Anthem Bill</th>
+                </tr>
+            </thead>    
+        </table>
+
+        <script>
+
+        $(document).ready( function () {
+    		$('#table_id').DataTable( {
+            paging: 10,
+            rowReorder: {
+                selector: 'td:nth-child(2)'
+            },
+            responsive: false,
+    		data: studenti_data3,
+    		columns: [
+		        { data: 'PM Name' },
+		        { data: 'Adjustments to the amounts mobilised from the Flexibility Instrument for 2019 to be used for migration, refugee inflows and security threats' },
+		        { data: 'Foreign electoral interference and disinformation in national and European democratic processes' },
+		        { data: 'Draft amending budget surplus from 2018' },
+		        { data: 'Mobilisation of the European Globalisation Adjustment Fund'},
+                { data: 'EurOil and Serbia Cooperation Agreement'},
+                { data: 'Criminal Justice (International Co-operation) Bill'},
+                { data: 'Parole Bill'},
+                { data: 'Judicial Appointments Commission Bill'},
+                { data: 'Proposed Service by Defence Forces with United Nations in Mali'},
+                { data: 'Judicial Council Bill'},  
+                { data: 'National Minimum Wage'},
+                { data: 'Deployment of Defence Forces in Albania'},
+                { data: 'Information and Tracing Bill'},
+                { data: 'Sugar Tax Bill'},
+                { data: 'Vulture Companies Regulation Appendix'},
+                { data: 'Gaming and Lotteries Bill'},
+                { data: 'Residential Tenancies Bill'},
+                { data: 'Thirty-fifth Amendment of the Constitution'},
+                { data: 'Special Regulations about Mothers and Babies'},
+                { data: 'Aircraft Noise  Bill'},
+                { data: 'Nuclear Power Strategy'},
+                { data: 'Wildlife Protection Bill'},
+                { data: 'Mandatory Beef Price Transparency Bill'},
+                { data: 'Harmful Plastics (Prohibition) Bill'},
+                { data: 'Parent\'s Leave and Benefit Bill'},
+                { data: 'Intoxicating Liquor Act'},
+                { data: 'Recognition of Decisions on Supervision Measures on Facebook'},
+                { data: 'Blasphemy Bill'},
+                { data: 'Firearms and Offensive Weapons Act'},
+                { data: 'National Anthem Bill'}             
+    		]
+        });
+        
+        $(".dataTables_length").remove();
+        $("#table_id_filter").remove();
+
+        });
+
+        </script>
+
+    </body>
+</html>
